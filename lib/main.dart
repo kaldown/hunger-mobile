@@ -3,8 +3,8 @@ import 'dart:async';
 
 import 'package:grpc/grpc.dart';
 
-import 'package:hunger/src/generated/quiz.pb.dart';
-import 'package:hunger/src/generated/quiz.pbgrpc.dart';
+import 'package:hunger/build/generated/quiz.pb.dart';
+import 'package:hunger/build/generated/quiz.pbgrpc.dart';
 
 Future<QuizerClient> connect(String sock) async {
   List ipAndPort = sock.split(':');
